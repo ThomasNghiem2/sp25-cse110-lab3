@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pomodoro Timer First Meeting</title>
 
-    <link rel="icon" type="image/x-icon" href="/download.ico" />
+    <link rel="icon" type="image/x-icon" href="resources/favicon.ico" />
 </head>
 <body>
     <header>
@@ -13,14 +13,16 @@
 
         <nav>
             <ul>
-                <li><a href="#announcements">Announcements</a></li>
-                <li><a href="#notes">Notes</a></li>
+                <li><a href="#agenda">Agenda</a></li>
+                <li><a href="#today">Today</a></li>
+                <li><a href="#feedback">Feedback</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <h1>Pomodoro Timer</h1>
+        <h2>Check-Ins</h2>
        
         <img 
             src="https://images.unsplash.com/photo-1513544705284-99373737fab6?w=1800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cG9tb2Rvcm8lMjB0aW1lcnxlbnwwfHwwfHx8MA%3D%3D" 
@@ -29,31 +31,139 @@
         >
         <hr>
         
-        <h2 id="Announcements">Announcements</h2>
+        <h2 id="agenda">Agenda</h2>
 
         <ol>
-            <li>Agenda Overview of goals</li>
+            <li>Agenda/Overview of goals</li>
             <li>It will be my birthday in 11 months</li>
             <li>Upcoming event with team-bonding</li>
         </ol>
 
-        <h2 id="Notes">Notes</h2>
+        <h2 id="today">Today</h2>
+        <section>
+            <h3>Recap</h3>
+            <p>
+                We formed <b>groups</b> in order to conduct team work across developing projects. 
+                We still need to meet up and get to know each other.
+            </p>
+        </section>
+        
+        <section>
+            <h3>To-do</h3>
+            <p>
+                We met with team members and participated in various <b>bonding activities</b> 
+                to get to better know each other. We played some <b>games</b> and did some <b>Q&A</b>. 
+                We know you might be thinking <i>Oh no I am too shy for this</i>, but this is an
+                important part of building successful teams. This is something we <em>need</em> to do.
+                <br>
+                <strong>Remember we have an assignment due in a few days</strong>
+            </p>
+        </section>
 
-        <h3>Recap</h3>
-        <p>
-            We formed groups in order to conduct team work across developing projects.
-        </p>
+        <section>
+            <h3>To watch</h3>
 
-        <h3>Today</h3>
-        <p>
-            We met with team members and participated in various bonding activities 
-            to get to better know each other. We played some games and did some Q&A.
-        </p>
+            <audio controls src="resources/Merry-Go-Round of Life - Howl s Moving Castle [Piano] _ Joe Hisaishi (mp3cut.net).mp3"></audio>
+            <br>
+            <video controls width="250" src="resources/Merry-Go-Round of Life - Howl s Moving Castle [Piano] _ Joe Hisaishi (online-video-cutter.com).mp4"></video>
+        </section><br><br>
+        
 
+        <form>
+            <label for="days">What is your birthday?</label><br>
+            <input type="date" id="days" name="choose" value="days">
+            
+        </form><br><br>
+
+        <form>
+            <label for="days">What days are you free?</label><br>
+            <div>
+                <input type="checkbox" id="monday" name="monday">
+                <label for="monday">Monday</label>
+            </div>
+            <div>
+                <input type="checkbox" id="tuesday" name="tuesday">
+                <label for="tuesday">Tuesday</label>
+            </div>
+            <div>
+                <input type="checkbox" id="wednesday" name="wednesday">
+                <label for="wednesday">Wednesday</label>
+            </div>
+            <div>
+                <input type="checkbox" id="thursday" name="thursday">
+                <label for="thursday">Thursday</label>
+            </div>
+            <div>
+                <input type="checkbox" id="friday" name="friday">
+                <label for="friday">Friday</label>
+            </div>
+            
+        </form><br><br>
+
+        <img 
+            src="data:image/png;base64,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" 
+            alt="To-Do"
+            width="250"
+        >
+
+        <br><br>
+        <details>
+            <summary>For Next Time</summary>
+            Make sure to come prepared with the activies and ready to continue working in groups!
+        </details>
+        
     </main>
 
     <hr>
 
-    <footer></footer>
+    <footer>
+        <h5 id="feedback">Feedback</h5>
+
+        <form>
+            <fieldset>
+                <legend>Pick a fruit:</legend>
+                
+                <select name="mango" id="pick">
+                    <option value="">--Choose one--</option>
+                    <option value="Mango">Mango</option>
+                    <option value="Mango">Mango</option>
+                    <option value="Mango">Mango</option>
+                </select><br><br>
+
+                <label for="choose">Pick again</label><br>
+                <input list="fruits" name="choose" id="choose">
+                <datalist id="fruits">
+                    <option value="Mango"></option>
+                    <option value="Mango is the only right option"></option>
+                    <option value="Choose mango"></option>
+                </datalist><br><br>
+
+                <label for="why">Why do you like mangoes?</label><br>
+                <textarea name="why" id="why">
+                    Tell us why.
+                </textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>How was this?</legend>
+                <div>
+                    <input type="radio" id="Great!" name="yay" value="Great!">
+                    <label for="Great!">Great!</label>
+                </div>
+                <div>
+                    <input type="radio" id="Do better!" name="yay" value="Do better!">
+                    <label for="Do better!">Do better!</label>
+                </div>
+            </fieldset>
+        
+            <fieldset>
+                <legend>Thank you!</legend>
+                <input type="text" placeholder="Give us feedback!">
+                <button type="button">Submit</button>
+                <span>Please visit again!</span>
+            </fieldset>
+            
+        </form>
+    </footer>
 </body>
 </html>
